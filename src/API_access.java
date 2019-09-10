@@ -26,8 +26,13 @@ class WeatherFunctions {
     WeatherFunctions(String zip) {
 
         // full call, including user provided zip code
+        
+        /***************************************************************
+        ** NOTE: YOU MUST REGISTER AT OpenWeatherMap.org AND ENTER YOUR  
+        ** API KEY WHERE IT IS MARKED IN THE STRING BELOW 
+        ***************************************************************/
         String fullCall = "http://api.openweathermap.org/data/2.5/weather?zip=" + zip +
-                ",us&APPID=23dee912e2b97f3ac1857301d37e3c66";
+                ",us&APPID=****INSERT API KEY HERE****";
 
         // try to make an HTTP call and get a JSON object
         try {
